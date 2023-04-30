@@ -2,7 +2,7 @@
 
 ## Python環境構(Docker）
 下記を参考にしてローカル環境にPythonコンテナを作成
-- [docker-win11-python](https://github.com/takanori-azegami-jp/docker-win11-pythondocker-win11-python)
+- [docker-win11-python](https://github.com/takanori-azegami-jp/docker-win11-python)
 
 ## LINE Developersを使う
 下記でアカウント取得する
