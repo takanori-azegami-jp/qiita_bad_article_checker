@@ -3,7 +3,7 @@
 
 ## 1. LINE Developersアカウントの取得
 下記記事を参考に`LINE Developers`アカウントを取得
-- [LINE公式アカウントのMessaging APIつかってみた](hhttps://qiita.com/sugimon/items/6c54cb17864c5fd33ddc)
+- [LINE公式アカウントのMessaging APIつかってみた](https://qiita.com/sugimon/items/6c54cb17864c5fd33ddc)
 
 ## 2. ngrokアカウントを取得
 下記記事を参考に`ngrok`アカウントを取得
