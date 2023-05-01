@@ -40,7 +40,7 @@ $ uvicorn main:app --reload
 
 ```bash
 # アクセストークン認証
-$ ngrok config add-authtoken [アクセストークン]
+$ ngrok config add-authtoken [ngrokアクセストークン]
 
 # 公開(必要に応じてFireWallを開放する)
 $ ngrok http 8000
