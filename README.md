@@ -33,7 +33,15 @@ curlでエラーにならないか確認
 ```bash
 $ curl http://localhost:8000
 
+<<<<<<< HEAD
 {"status":"ok"}
+=======
+# コンテナに入る
+$ docker exec -it [コンテナID] bash
+
+# コンテナの中からAPIサーバ起動
+$ uvicorn main:app --reload
+>>>>>>> 0f5741563fdbbf0d045dedceb27dc463245a9c15
 ```
 
 # 5.ngrokでWebサイトを公開
