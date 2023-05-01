@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  python3:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: 'python3'
+    environment:
+      - CHANNEL_SECRET=${CHANNEL_SECRET}
+      - CHANNEL_ACCESS_TOKEN=${CHANNEL_ACCESS_TOKEN}
+    ports:
+      - '8000:8000'
+    restart: always
+    tty: true
+    volumes:
+      - ./src:/usr/src/app
+volumes:
+  python3:
+    driver: local
