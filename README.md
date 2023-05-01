@@ -31,7 +31,7 @@ $ docker ps
 $ docker exec -it [コンテナID] bash
 
 # コンテナの中からAPIサーバ起動
-$ uvicorn main:app
+$ uvicorn main:app --reload
 ```
 
 # 5.ngrokでWebサイトを公開
