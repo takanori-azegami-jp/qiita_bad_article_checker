@@ -11,6 +11,7 @@ services:
       - CHANNEL_ACCESS_TOKEN=${CHANNEL_ACCESS_TOKEN}
     ports:
       - '8000:8000'
+    command: uvicorn main:app --reload --host 0.0.0.0 --port 8000
     restart: always
     tty: true
     volumes:

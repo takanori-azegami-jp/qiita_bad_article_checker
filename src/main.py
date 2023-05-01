@@ -14,7 +14,6 @@ load_dotenv()
 CHANNEL_SECRET = os.environ.get('CHANNEL_SECRET')
 CHANNEL_ACCESS_TOKEN = os.environ.get('CHANNEL_ACCESS_TOKEN')
 
-
 app = FastAPI()
 
 line_bot_api = LineBotApi(channel_access_token=CHANNEL_ACCESS_TOKEN)
@@ -108,5 +107,6 @@ def handle_message(event):
         )
 
 
-if __name__ == "__main__":
-    uvicorn.run("app:app", host="0.0.0.0", port=8000, log_level='info')
+@app.get("/")
+def read_root():
+    return {"status": "ok"}
